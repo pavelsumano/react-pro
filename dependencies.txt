@@ -8,3 +8,8 @@ babel-cli babel-core babel-eslint babel-loader babel-polyfill babel-preset-env b
 
 esta linea es del JSon linea 9 package.json
 "clean": "rimraf dist/ && rimraf public/app",
+
+error en el import..
+
+en el index.js
+

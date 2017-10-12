@@ -3,7 +3,7 @@ import webpackMerge from 'webpack-merge';
 
 //webpack configuration
 import commonConfig from './webpack.config.common';
-import {context, devtool, entry, externals, name, output, plugins, target} from './configuration';
+import { context, devtool, entry, externals, name, output, plugins, target } from './configuration';
 
 //type of configuration
 const type = 'client';

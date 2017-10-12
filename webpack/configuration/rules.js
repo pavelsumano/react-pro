@@ -13,7 +13,7 @@ export default type => {
     }
   ];
 
-  if (!isDevelopment || type ==='server') {
+  if (!isDevelopment || type === 'server') {
     rules.push({
       test: /\.sccs$/,
       use: ExtractTextPlugin.extract({

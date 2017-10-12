@@ -6,7 +6,7 @@ import { AppContainer } from 'react-hot-loader';
 
 //Containers
 
-import App from './containers/App';
+import App from 'containers/App';
 
 //DOM
 
@@ -27,7 +27,7 @@ renderApp(App);
 
 //RHL
 if (module.hot) {
-  module.hot.accept('./containers/App', () => {
-    renderApp(require('./containers/App').default);
+  module.hot.accept('containers/App', () => {
+    renderApp(require('containers/App').default);
   });
 }

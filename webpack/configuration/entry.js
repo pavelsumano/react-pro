@@ -1,4 +1,4 @@
-// Environment
+//Environment
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 export default type => {
@@ -16,7 +16,6 @@ export default type => {
       'react-hot-loader/patch'
     );
   }
-
   entry.main.push('./client.js');
 
   return entry;

@@ -1,4 +1,4 @@
-// Dependencies
+//Dependencies
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import webpack from 'webpack';
 

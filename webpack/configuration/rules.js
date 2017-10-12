@@ -1,7 +1,7 @@
-// Dependencies
+//Dependencies
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-// Environment
+//Environment
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 export default type => {

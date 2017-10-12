@@ -1,4 +1,4 @@
-//configuration
+// Configuration
 import { rules, extensions, modules } from './configuration';
 
 export default type => ({

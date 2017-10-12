@@ -1,4 +1,4 @@
-//Environment
+// Environment
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 export default type => {
@@ -9,13 +9,15 @@ export default type => {
   const entry = {
     main: []
   };
-  
+
   if (isDevelopment) {
     entry.main.push(
       'webpack-hot-middleware/client',
       'react-hot-loader/patch'
     );
   }
+
   entry.main.push('./client.js');
+
   return entry;
 };

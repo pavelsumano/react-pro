@@ -1,7 +1,7 @@
-//Dependencies
+// Dependencies
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-//Environment
+// Environment
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 export default type => {
@@ -15,7 +15,7 @@ export default type => {
 
   if (!isDevelopment || type === 'server') {
     rules.push({
-      test: /\.sccs$/,
+      test: /\.scss$/,
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
         use: [

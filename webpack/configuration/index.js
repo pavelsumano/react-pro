@@ -1,4 +1,4 @@
-//Configuration
+// Configuration
 import context from './context';
 import devtool from './devtool';
 import entry from './entry';

@@ -3,17 +3,28 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 
 // Containers
-import App from '../app/containers/App';
+import App from '../app/App';
 
 // HTML
 import html from './html';
 
 export default function serverRender() {
   return (req, res, next) => {
-    const markup = renderToString(<App />);
+    const context = {};
+    const markup = renderToString(
+      <App
+        server
+        location={req.url}
+        context={context}
+      />
+    );
 
-    res.send(html({
-      markup
-    }));
+    if (context.url) {
+      res.redrirect(301, context.url);
+    } else {
+      res.send(html({
+        markup
+      }));
+    }
   };
 }
